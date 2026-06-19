@@ -47,10 +47,10 @@ body{
   }
 }
 
-.moveLink{
+.movelink{
   opacity: 0;
 }
 
-.link:hover .moveLink{
+.link:hover .movelink{
   opacity: 1;
 }

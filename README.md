@@ -1,6 +1,5 @@
 # K72 
-
-A small React project built with Vite that reproduces a fullscreen agency-style landing with video background, GSAP animations and a custom fullscreen navigation. Designed as a front-end demo/portfolio template.
+A clean, animated agency landing built with React, Vite, Tailwind, and GSAP. Includes a fullscreen video background, cinematic animations, and custom navigation for the ultimate portfolio demo.
 
 ## Features
 - Fullscreen video background on the home page
@@ -45,6 +44,7 @@ Notes:
 - npm run preview — preview production build (vite)
 
 ## Credits
+Created by Aastha Bhatia <3
 Special thanks to Sherians Coding School.
 
 ## Contributing

@@ -1,4 +1,4 @@
-# K72 — React + Vite 
+# K72 
 
 A small React project built with Vite that reproduces a fullscreen agency-style landing with video background, GSAP animations and a custom fullscreen navigation. Designed as a front-end demo/portfolio template.
 

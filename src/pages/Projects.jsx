@@ -5,7 +5,6 @@ import gsap from 'gsap'
 import {ScrollTrigger} from 'gsap/ScrollTrigger'
 
 const Projects=()=>{
-
   const projects=[
     {
       image1: 'https://k72.ca/images/caseStudies/iA_BRAND/Thumbnail.png?w=1200&h=1920&s=505ea3cc92524cc5c493dfa12440beeb',
@@ -47,11 +46,11 @@ const Projects=()=>{
     gsap.from('.hero',{
       height: '100px',
       stagger:{
-        amount: 0.5,
+        amount: 0.1,
       },
       scrollTrigger:{
         trigger:'.lol',
-        markers: true,
+        // markers: true,
         start: 'top 100%',
         end: 'top -150%',
         scrub: true,
@@ -60,16 +59,16 @@ const Projects=()=>{
   })
 
   return(
-    <div className='p-2'>
+    <div className='lg:p-2 p-1'>
       <div className='pt-[45vh]'>
-        <h2 className='font-[font2] text-[11.5vw] uppercase'>Projects</h2>
+        <h2 className='font-[font2] lg:text-[11.5vw] text-7xl uppercase'>Projects</h2>
       </div>
 
       {/* main animation, scrolling effect */}
-      <div className='-mt-13 lol'>
+      <div className='-lg:mt-13 lol'>
         {projects.map(function(elem, idx){
           return (
-          <div key={idx} className=' hero w-full h-[500px] mb-2 flex gap-3'> 
+          <div key={idx} className='hero w-full lg:h-[500px] mb-2 flex lg:flex-row flex-col lg:gap-3 gap-1.5'> 
           <ProjectCard image1={elem.image1} image2={elem.image2}/>
           </div>
           )

@@ -1,6 +1,8 @@
 # K72 
 A clean, animated agency landing built with React, Vite, Tailwind, and GSAP. Includes a fullscreen video background, cinematic animations, and custom navigation for the ultimate portfolio demo.
 
+<img width="1920" height="1080" alt="Screenshot (1791)" src="https://github.com/user-attachments/assets/e56a98e8-8b02-420e-b1c8-168535f64e61" />
+
 ## Features
 - Fullscreen video background on the home page
 - Animated page transitions and fullscreen nav using GSAP

@@ -2,6 +2,7 @@ import { useGSAP } from '@gsap/react'
 import gsap from 'gsap'
 import { ScrollTrigger } from 'gsap/all'
 import { useRef } from 'react'
+import { useEffect } from 'react'
 
 const Agence=()=>{
 
@@ -26,9 +27,13 @@ const Agence=()=>{
     'https://k72.ca/uploads/teamMembers/MEGGIE_480X640_2-480x640.jpg',
     'https://k72.ca/uploads/teamMembers/joel_480X640_3-480x640.jpg',
   ]
+  useEffect(()=>{
+  window.scrollTo(0,0)
+  ScrollTrigger.refresh()
+},[])
 
   useGSAP(function (){
-
+    ScrollTrigger.killAll()
     gsap.to(imageDivRef.current,{
       scrollTrigger:{
         trigger: imageDivRef.current,
@@ -60,7 +65,7 @@ const Agence=()=>{
     <div className='parent'>
       <div id='page1' className='py-1 '>
         <div ref={imageDivRef} className='absolute overflow-hidden lg:rounded-3xl lg:rounded-3xl rounded-xl lg:h-[20vw] h-[30vw] lg:w-[15vw] w-[25vw] lg:top-35 md:-top-96 lg:left-[30vw] left-[30vw]'>
-          <img ref={imageRef} className='h-full object-cover w-full' src="https://k72.ca/uploads/teamMembers/Carl_480x640-480x640.jpg" alt="" />
+          <img ref={imageRef} key={0} className='h-full object-cover w-full' src="https://k72.ca/uploads/teamMembers/Carl_480x640-480x640.jpg" alt="" />
         </div>
         <div className='relative font-[font2]'>
           <div className='lg:mt-[55vh] mt-[30vh]'>

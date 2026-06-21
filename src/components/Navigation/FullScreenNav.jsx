@@ -102,7 +102,7 @@ const FullScreenNav=()=>{
                     </div>
                 </div>
             <div id="all-links">
-            <div onClick={()=>navigate('/projects')} className="link origin-top relative overflow-hidden border-y-1 border-white cursor-pointer">
+            <div onClick={()=>{ setNavOpen(false); navigate('/projects'); }} className="link origin-top relative overflow-hidden border-y-1 border-white cursor-pointer">
                 <h1 className='font-[font2] text-5xl lg:text-[8vw] uppercase lg:leading-[0.8] lg:pt-4 pt-1 text-center'>Projets</h1>
                 <div className='movelink absolute inset-0 h-full w-full flex overflow-hidden bg-[#D3FD50] text-black'>
                     <div className='moveX flex items-center flex-shrink-0'>

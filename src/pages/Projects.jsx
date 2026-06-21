@@ -65,7 +65,7 @@ const Projects=()=>{
       </div>
 
       {/* main animation, scrolling effect */}
-      <div className='mt-[-13vh] lol'>
+      <div className='mt-[2vh] lol'>
         {projects.map(function(elem, idx){
           return (
           <div key={idx} className='hero w-full h-[500px] lg:h-[500px] mb-2 flex lg:flex-row flex-col lg:gap-3 gap-1.5'>

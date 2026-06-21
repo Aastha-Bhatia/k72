@@ -2,12 +2,15 @@ import {useGSAP} from '@gsap/react'
 import gsap from 'gsap'
 import React, {useContext, useEffect, useRef, useState} from 'react'
 import {NavbarContext} from '../../context/NavContext'
+import { useNavigate } from 'react-router-dom'
+
 
 const FullScreenNav=()=>{
     const fullNavLinksRef=useRef(null)
     const fullScreenRef=useRef(null)
     const moveLoopRef=useRef([])
     const [navOpen, setNavOpen]=useContext(NavbarContext)
+    const navigate=useNavigate()
 
     function gsapAnimation(){
         const tl=gsap.timeline()
@@ -99,7 +102,7 @@ const FullScreenNav=()=>{
                     </div>
                 </div>
             <div id="all-links">
-            <div onClick={()=>window.location.href='/projects'} className="link origin-top relative overflow-hidden border-y-1 border-white cursor-pointer">
+            <div onClick={()=>navigate('/projects')} className="link origin-top relative overflow-hidden border-y-1 border-white cursor-pointer">
                 <h1 className='font-[font2] text-5xl lg:text-[8vw] uppercase lg:leading-[0.8] lg:pt-4 pt-1 text-center'>Projets</h1>
                 <div className='movelink absolute inset-0 h-full w-full flex overflow-hidden bg-[#D3FD50] text-black'>
                     <div className='moveX flex items-center flex-shrink-0'>
@@ -117,7 +120,7 @@ const FullScreenNav=()=>{
                 </div>
             </div>
 
-            <div onClick={()=>window.location.href='/agence'} className="link origin-top relative overflow-hidden border-y-1 border-white cursor-pointer">
+            <div onClick={()=>navigate('/agence')} className="link origin-top relative overflow-hidden border-y-1 border-white cursor-pointer">
                 <h1 className='font-[font2] text-5xl lg:text-[8vw] uppercase lg:leading-[0.8] lg:pt-4 pt-1 text-center'>Agence</h1>
                 <div className='movelink absolute inset-0 h-full w-full flex overflow-hidden bg-[#D3FD50] text-black'>
                     <div className='moveX flex items-center flex-shrink-0'>

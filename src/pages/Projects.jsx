@@ -65,10 +65,10 @@ const Projects=()=>{
       </div>
 
       {/* main animation, scrolling effect */}
-      <div className='-lg:mt-13 lol'>
+      <div className='mt-[-13vh] lol'>
         {projects.map(function(elem, idx){
           return (
-          <div key={idx} className='hero w-full lg:h-[500px] mb-2 flex lg:flex-row flex-col lg:gap-3 gap-1.5'> 
+          <div key={idx} className='hero w-full h-[500px] lg:h-[500px] mb-2 flex lg:flex-row flex-col lg:gap-3 gap-1.5'>
           <ProjectCard image1={elem.image1} image2={elem.image2}/>
           </div>
           )

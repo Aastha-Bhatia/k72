@@ -2,7 +2,7 @@ import React from 'react'
 const projectCard=(props)=>{
   return(
         <>
-          <div className='lg:w-1/2 group relative transition-all hover:rounded-[40px] overflow-hidden h-full'>
+          <div className='w-full lg:w-1/2 group relative transition-all hover:rounded-[40px] overflow-hidden h-full'>
             <img className='h-full w-full object-cover' src={props.image1} alt="" />
             {/* text inside the box */}
             <div className='opacity-0 group-hover:opacity-100 transition-all absolute top-0 flex left-0 h-full w-full bg-black/10 items-center justify-center'>
@@ -10,7 +10,7 @@ const projectCard=(props)=>{
             </div>
             </div>
             {/* 2nd */}
-            <div className='lg:w-1/2 group relative transition-all hover:rounded-[40px] overflow-hidden h-full'>
+            <div className='w-full lg:w-1/2 group relative transition-all hover:rounded-[40px] overflow-hidden h-full'>
             <img className='h-full w-full object-cover' src={props.image2} alt="" />
             {/* text inside the box */}
             <div className='opacity-0 group-hover:opacity-100 transition-all absolute top-0 flex left-0 h-full w-full bg-black/10 items-center justify-center'>
